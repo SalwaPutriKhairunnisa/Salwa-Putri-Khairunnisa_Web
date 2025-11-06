@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan | Chatime</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleuts.css">
+    <link rel="stylesheet" href="styleorder.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="Images/logo chatime.png" alt="Chatime Logo" class="logo">
+            <nav>
+        <ul>
+            <li><a href="UTS.html">HOME</a></li>
+            <li>
+                <a href="about_us.html">ABOUT US ▾</a>
+                <ul class="dropdown">
+                    <li><a href="about_us.html#profile">Our Profile</a></li>
+                    <li><a href="about_us.html#history">Our History</a></li>
+                    <li><a href="about_us.html#team">Our Team</a></li>
+                </ul>
+            </li>
+            <li><a href="menuchatime.html">MENU ▾</a>
+                <ul class="dropdown">
+                    <li><a href="menuchatime.html.#popcan">Popcan</a></li>
+                    <li><a href="menuchtaime.html#gede-banget">Gede Banget 1L</a></li>
+                    <li><a href="menuchatime.html#signature-milk">Signature Milk Tea</a></li>
+                    <li><a href="menuchatime.html#mood-refresh">Mood Refresh</a></li>
+                    <li><a href="menuchatime.html#coffee-latte">Coffee & Latte</a></li>
+                    <li><a href="menuchatime.html#tea-presso">Tea Presso</a></li>
+                    <li><a href="menuchatime.html#smoothies">Smoothies</a></li>
+                </ul>
+                </li>
+            <li><a href="join_us.html">JOIN US</a></li>
+            <li><a href="find_us.html#find_us">FIND US</a></li>
+            <li><a href="gallery.html#gallery">GALLERY</a></li>
+            <li><a href="contact.html#contact">CONTACT</a></li>
+        </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <h1>Silahkan Order!</h1>
+
+    <form id="customerForm">
+  <table>
+    <tr>
+      <th colspan="2" style="text-align:center;">Isi Data Pemesan</th>
+    </tr>
+    <tr>
+      <td><label for="nama">Nama:</label></td>
+      <td><input type="text" id="nama" required></td>
+    </tr>
+
+    <tr>
+      <td><label for="pesanan">Pesanan:</label></td>
+      <td>
+        <input type="text" id="pesanan" required>
+        <select id="Brew" name="Brew" required>
+          <option value="Hot">Hot</option>
+          <option value="Cold">Cold</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="tipe">Tipe Pesanan:</label></td>
+      <td>
+        <label><input type="radio" name="tipe" value="Dine In" required> Dine In</label>
+        <label><input type="radio" name="tipe" value="Take Away"> Take Away</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="telepon">Nomor HP:</label></td>
+      <td><input type="text" id="telepon" required></td>
+    </tr>
+
+    <tr>
+      <td><label for="catatan">Catatan Tambahan:</label></td>
+      <td><input type="text" id="catatan"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" style="text-align:center;">
+        <button type="submit" class="btn-submit">Kirim Pesanan</button>
+      </td>
+    </tr>
+  </table>
+</form>
+
+  <a href="menuchatime.html" class="back-link">← Kembali ke Menu</a>
+
+  <!-- <script src="scriptUTS.js"></script> -->
+
+
+</body>
+</html>
