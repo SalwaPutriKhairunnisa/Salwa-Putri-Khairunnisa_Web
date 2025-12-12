@@ -1,3 +1,10 @@
+// Waktu real time
+function tampilkanTanggal () {
+    const tgl = new Date();
+    document.getElementById("tanggal").innerHTML = "🗓️" + tgl.toLocaleString("id-ID");
+}
+setInterval(tampilkanTanggal,1000);
+
 const swiper = new Swiper('.my-swiper', {
   direction: 'horizontal',
   loop: true,
